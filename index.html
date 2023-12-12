@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio of Kanno Rei| Main page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <header class="header" style="background-image:url('images/bj.jpg') ;" id="header">
+    <div class="header__top">
+      <div class="container">
+        <nav class="header__nav">
+          <a class="header__logo logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <button class="header__burger burger" type="button">
+            <span class="burger__line"></span>
+            <span class="sr-only">open meny</span>
+          </button>
+
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#about">About me</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#skills">Skills</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#services">Services</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#works">Portfolio</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#reviews">Reviews</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#contacts">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="header__content">
+      <div class="header__container container">
+        <h1 class="header__title">
+          Hello, I'm Rei  Kanno
+          <span>frontend developer</span>
+        </h1>
+
+        <a class="header__more" href="#">
+          see works
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="about__title title">
+          About me
+        </h2>
+
+        <div class="about__text">
+          <p>
+          I welcome everyone to my site! My name is Ivan, I'm from Kyiv. I've been doing front-end development for over a year.
+          Before
+          development
+          was engaged in an unloved business, went to an unloved job, could not understand what to take up, so that the business
+          would bring
+          pleasure and
+          money until I came across one interesting course.
+          </p>
+          <p>
+          Since then, fire, water and copper pipes have passed. Studying was given in different ways: somewhere easier, somewhere
+          more difficult.
+          Everyday
+          the work on the skills and the diligence with which I approached the training bore fruit in a few months -
+          I took
+          first freelance job. See customer testimonials and examples of work below.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="skills__title title">
+        Skills
+        </h2>
+
+        <div class="skills__inner">
+          <img class="skills__img" src="images/skills.jpg" alt="photo Kanno Rei">
+          
+          <ul class="skills__info">
+            <li class="skills__item">
+              <span class="skills__text">html</span>
+              <span class="skills__line">
+                <span class="skills__progress" style="width: 85%;"></span>
+              </span>
+            </li>
+
+            <li class="skills__item">
+              <span class="skills__text">css</span>
+              <span class="skills__line">
+                <span class="skills__progress" style="width: 80%;"></span>
+              </span>
+            </li>
+
+            <li class="skills__item">
+              <span class="skills__text">js</span>
+              <span class="skills__line">
+                <span class="skills__progress" style="width: 61%;"></span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+   <section class="services section" id="services">
+      <div class="container">
+        <h2 class="services__title title">
+          Services
+        </h2>
+
+        <ul class="services__items">
+          <li class="services__item services__item--code">
+            <h3 class="services__name">
+              Project layout
+            </h3>
+            <p class="services__text">
+              I will make a high-quality layout of your project according to the provided layout or example
+            </p>
+          </li>
+
+          <li class="services__item services__item--dev">
+            <h3 class="services__name">
+            Landing on CMS
+            </h3>
+            <p class="services__text">
+              I will integrate your project into one of the popular CMS
+            </p>
+          </li>
+
+          <li class="services__item services__item--chat">
+            <h3 class="services__name">
+              Site support
+            </h3>
+            <p class="services__text">
+            I guarantee the support of your site for 30 days after the delivery of the project
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+   <section class="works" id="works">
+      <div class="container">
+        <h2 class="works__title title">
+          My works
+        </h2>
+
+        <ul class="works__filters filters">
+          <li class="filters__item">
+            <buttom class="filters__btn" type="button" data-filter="all">All works</buttom>
+          </li>
+          <li class="filters__item">
+            <button class="filters__btn" type="button" data-filter=".category-b">Landings</button>
+          </li>
+          <li class="filters__item">
+            <button class="filters__btn" type="button" data-filter=".category-c">Corporate</button>
+          </li>
+          <li class="filters__item">
+            <button class="filters__btn" type="button" data-filter=".category-d">E-commerce</button>
+          </li>
+        </ul>
+
+        <ul class="works__wrapper">
+          <li class="works__item mix category-a category-b">
+            <a class="works__link" href="#">
+              <img class="works__img" src="images/img1.jpg" alt="city on the river">
+            </a>
+          </li>
+
+          <li class="works__item mix category-b category-d">
+            <a class="works__link" href="#">
+              <img class="works__img" src="images/img2.jpg" alt="boats on the river">
+            </a>
+          </li>
+
+          <li class="works__item mix category-c category-d ">
+            <a class="works__link" href="#">
+              <img class="works__img" src="images/img3.jpg" alt="railroad bridge">
+          </li>
+
+          <li class="works__item mix category-d category-b">
+            <a class="works__link" href="#">
+              <img class="works__img" src="images/img4.jpg" alt="bird's eye view of the city">
+            </a>
+          </li>
+
+          <li class="works__item mix category-a category-d">
+            <a class="works__link" href="#">
+              <img class="works__img" src="images/img5.jpg" alt="sea ​​shore">
+            </a>
+          </li>
+
+          <li class="works__item mix category-a category-b">
+            <a class="works__link" href="#">
+              <img class="works__img" src="images/img6.jpg" alt="cliff">
+            </a>
+          </li>
+        </ul>
+
+        <button class="works__more btn" type="button">Load more</button>
+      </div>
+    </section>
+
+   <section class="reviews section" id="reviews">
+      <div class="container">
+        <h2 class="reviews__title title">
+          Customer Reviews
+        </h2>
+
+        <div class="reviews__wrapper">
+          <figure class="reviews__comment">
+            <img class="reviews__img" src="images/mark.jpg" alt="Mark Zuckerberg">
+
+            <figcaption class="reviews__name">
+              <cite class="reviews__author">
+                Mark Zuckerberg
+              </cite>
+            </figcaption>
+            <blockquote class="reviews__blockquote ">
+              <p>
+              Fantastic! I am completely satisfied
+              work of this specialist.
+              Quickly and efficiently. I recommend!
+              </p>
+            </blockquote>
+          </figure>
+
+            <a class="reviews__video" style="background-image:url('images/video.jpg') ;"
+            href="https://youtu.be/Dx5qFachd3A" data-fancybox>
+            <span class="sr-only">watch video review</span>
+          </a>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="progress section" id="progress">
+      <div class="container">
+        <h2 class="sr-only">my achievements</h2>
+
+        <ul class="progress__wrapper">
+          <li class="progress__item progress__item--works">
+            <span class="progress__text">Executed works</span>
+            <span class="progress__num">56</span>
+          </li>
+
+          <li class="progress__item progress__item--clients">
+            <span class="progress__text">Satisfied customers</span>
+            <span class="progress__num">23</span>
+          </li>
+
+          <li class="progress__item progress__item--coffee">
+            <span class="progress__text">Drinking cups of coffee</span>
+            <span class="progress__num">477</span>
+          </li>
+
+          <li class="progress__item progress__item--review">
+            <span class="progress__text">Total Reviews</span>
+            <span class="progress__num">48</span>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+     <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts__title title">Contacts</h2>
+
+        <div class="contacts__inner">
+          <address class="contacts__info">
+            <p class="contacts__text">
+              You can contact me using the contact form, or directly by phone number, email, in
+              social networks:
+            </p>
+
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380501111111">+38 (050) 111 11 11</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:frontend-monster@email.com">frontend-monster@email.com</a>
+              </li>
+            </ul>
+
+            <ul class="contacs__items social">
+              <li class="social__item">
+                <a class=" social__link" style="background-image: url('images/instagram.svg');" href="#"
+                  target="_blank">
+                  <span class="sr-only">visit our instagram</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" style="background-image: url('images/facebook.svg');" href="#" target="_blank">
+                  <span class="sr-only">visit our facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" style="background-image: url('images/telegram.svg'); " href="#" target="_blank">
+                  <span class="sr-only">visit our telegram</span>
+                </a>
+              </li>
+            </ul>
+          </address>
+
+        <form class="contacts__form form" action="#">
+            <div class="form__inner">
+              <div class="form__item">
+                <label class="form__label" for="name">your name</label>
+                <input class="form__field" type="text" id="name" name="name" placeholder="Rei" required>
+              </div>
+
+              <div class="form__item">
+                <label class="form__label" for="phone">Phone number</label>
+                <input class="form__field" type="number" id="phone" name="phone" placeholder="+380501111111" required>
+              </div>
+            </div>
+
+
+            <label class="form__label" for="message">your message</label>
+            <textarea class="form__field form__field--textarea" id="message" name="message"
+              placeholder="Текст вашего сообщения"></textarea>
+
+            <button class="form__btn btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </section>
+
+  <footer class="footer">
+      <a class="footer__logo logo" href="#">
+        <img class="logo__img" src="images/logo.svg" alt="logo">
+      </a>
+    </footer>
+  </main>   
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
